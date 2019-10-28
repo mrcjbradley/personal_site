@@ -11,40 +11,42 @@
 
   @include vendor("display", "flex");
   @include vendor("flex-wrap", "wrap");
-  margin: 0 0 (_size(element-margin) + 5em) ($gutter * -1);
+  margin: 0 0 (_size(element-margin)) ($gutter * -1);
+  // margin: 0 0 (_size(element-margin) + 5em) ($gutter * -1);
   width: calc(100% + #{$gutter});
 
   article {
     @include vendor("align-items", "center");
     @include vendor("display", "flex");
-    // margin: 0 0 $gutter $gutter;
-    margin: 0 auto;
+    margin: 0 0 $gutter $gutter;
+    // margin: 0 auto;
     position: relative;
-    width: calc(20% - #{$gutter});
+    width: calc(50% - #{$gutter});
+    // width: calc(20% - #{$gutter});
 
-    &::after {
-      content: attr(-data-skill);
-      width: 100%;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: _font(weight-bold);
-      color: _palette(accent);
-      position: absolute;
-      bottom: -25px;
+    // &::after {
+    //   content: attr(-data-skill);
+    //   width: 100%;
+    //   text-align: center;
+    //   text-transform: uppercase;
+    //   font-weight: _font(weight-bold);
+    //   color: _palette(accent);
+    //   position: absolute;
+    //   bottom: -25px;
+    // }
+
+    &:nth-child(2n - 1) {
+      margin-right: ($gutter * 0.5);
     }
 
-    // &:nth-child(2n - 1) {
-    //   margin-right: ($gutter * 0.5);
-    // }
+    &:nth-child(2n) {
+      margin-left: ($gutter * 0.5);
+    }
 
-    // &:nth-child(2n) {
-    //   margin-left: ($gutter * 0.5);
-    // }
-
-    // &:nth-last-child(1),
-    // &:nth-last-child(2) {
-    //   margin-bottom: 0;
-    // }
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
 
     .icon {
       @include vendor("flex-grow", "0");
