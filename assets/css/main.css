@@ -1220,7 +1220,6 @@ input[type="radio"] + label:before {
     border-radius: 0.375em;
     display: block; }
   .image .headshot-image {
-    border-radius: 5% 40% 5% 40%;
     border: solid #04c78d 3px;
     max-width: 400px; }
   .image.left, .image.right {
