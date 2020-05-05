@@ -8,15 +8,22 @@
 - [Templatemo](https://templatemo.com/tag/portfolio)
 - [One Page Love](https://onepagelove.com/templates/free-templates)
 
-### Icons
-- [fontawesome](https://fontawesome.com/)
-- [devicon lib](https://konpa.github.io/devicon/)
 
 ### Fonts
 - https://fontflipper.com
 - https://fonts.google.com/
 
-### Assets
+### Icons
+- [fontawesome](https://fontawesome.com/)
+- [devicon lib](https://konpa.github.io/devicon/)
+
+### Favicons
+- favicon.io
+
+### Form handling
+- https://formspree.io/
+
+### Colors and Patterns
 
 - https://www.figma.com/
 - https://pigment.shapefactory.co/
