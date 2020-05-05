@@ -1,6 +1,6 @@
 
-
-## Template Sources
+## Design
+### Template Sources
 - [Free CSS Templates](http://www.free-css.com/template-categories/portfolio)
 - [HTML5 UP](http://html5up.net/)
 - [Start Bootstrap](http://startbootstrap.com/)
@@ -12,6 +12,20 @@
 - [fontawesome](https://fontawesome.com/)
 - [devicon lib](https://konpa.github.io/devicon/)
 
+### Fonts
+- https://fontflipper.com
+- https://fonts.google.com/
+
+### Assets
+
+- https://www.figma.com/
+- https://pigment.shapefactory.co/
+- https://duotone.shapefactory.co/
+- https://gradient.shapefactory.co/
+- https://source.unsplash.com/
+- https://www.heropatterns.com/
+- https://coolors.co/
+## Dev Environment
 ## VSCode Plugins
 - css-peek
 - live server
