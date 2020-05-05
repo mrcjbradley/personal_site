@@ -1,3 +1,23 @@
+
+
+## Template Sources
+- [Free CSS Templates](http://www.free-css.com/template-categories/portfolio)
+- [HTML5 UP](http://html5up.net/)
+- [Start Bootstrap](http://startbootstrap.com/)
+- [Theme Wagon](https://themewagon.com/top-html-landing-page-templates/)
+- [Templatemo](https://templatemo.com/tag/portfolio)
+- [One Page Love](https://onepagelove.com/templates/free-templates)
+
+### Icons
+- [fontawesome](https://fontawesome.com/)
+- [devicon lib](https://konpa.github.io/devicon/)
+
+## VSCode Plugins
+- css-peek
+- live server
+- live sass compiler
+- html css support
+
 ## Basic Gulp Set Up
 
 1. `npm init -yes`
