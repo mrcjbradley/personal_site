@@ -26,13 +26,29 @@
 - https://www.heropatterns.com/
 - https://coolors.co/
 ## Dev Environment
-## VSCode Plugins
+### VSCode Plugins
 - css-peek
 - live server
-- live sass compiler
 - html css support
+- live sass compiler
 
-## Basic Gulp Set Up
+```json
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css", // what kind of file to save the transpilation as
+      "savePath": "/assets/css/" // where to save the final transpiled css
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.includeItems": ["assets/sass/main.scss"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+}
+```
+
+### Basic Gulp Set Up
 
 1. `npm init -yes`
 2. `npm install --save-dev gulp gulp-sass browser-sync`
