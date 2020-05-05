@@ -1,4 +1,54 @@
-## Basic Gulp Set Up
+
+## Design
+### Template Sources
+- [Free CSS Templates](http://www.free-css.com/template-categories/portfolio)
+- [HTML5 UP](http://html5up.net/)
+- [Start Bootstrap](http://startbootstrap.com/)
+- [Theme Wagon](https://themewagon.com/top-html-landing-page-templates/)
+- [Templatemo](https://templatemo.com/tag/portfolio)
+- [One Page Love](https://onepagelove.com/templates/free-templates)
+
+### Icons
+- [fontawesome](https://fontawesome.com/)
+- [devicon lib](https://konpa.github.io/devicon/)
+
+### Fonts
+- https://fontflipper.com
+- https://fonts.google.com/
+
+### Assets
+
+- https://www.figma.com/
+- https://pigment.shapefactory.co/
+- https://duotone.shapefactory.co/
+- https://gradient.shapefactory.co/
+- https://source.unsplash.com/
+- https://www.heropatterns.com/
+- https://coolors.co/
+## Dev Environment
+### VSCode Plugins
+- css-peek
+- live server
+- html css support
+- live sass compiler
+
+```json
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css", // what kind of file to save the transpilation as
+      "savePath": "/assets/css/" // where to save the final transpiled css
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.includeItems": ["assets/sass/main.scss"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
+}
+```
+
+### Basic Gulp Set Up
 
 1. `npm init -yes`
 2. `npm install --save-dev gulp gulp-sass browser-sync`
