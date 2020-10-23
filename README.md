@@ -1,6 +1,7 @@
-
 ## Design
+
 ### Template Sources
+
 - [Free CSS Templates](http://www.free-css.com/template-categories/portfolio)
 - [HTML5 UP](http://html5up.net/)
 - [Start Bootstrap](http://startbootstrap.com/)
@@ -8,19 +9,22 @@
 - [Templatemo](https://templatemo.com/tag/portfolio)
 - [One Page Love](https://onepagelove.com/templates/free-templates)
 
-
 ### Fonts
+
 - https://fontflipper.com
 - https://fonts.google.com/
 
 ### Icons
+
 - [fontawesome](https://fontawesome.com/)
 - [devicon lib](https://konpa.github.io/devicon/)
 
 ### Favicons
+
 - favicon.io
 
 ### Form handling
+
 - https://formspree.io/
 
 ### Colors and Patterns
@@ -32,12 +36,15 @@
 - https://source.unsplash.com/
 - https://www.heropatterns.com/
 - https://coolors.co/
+
 ## Dev Environment
+
 ### VSCode Plugins
+
 - css-peek
 - live server
 - html css support
-- live sass compiler
+- live sass compiler (helpful settings below)
 
 ```json
 {
@@ -91,8 +98,8 @@ function watch() {
   browserSync.init({
     server: {
       // indicate the root to be hosted on our dev server
-      baseDir: "./"
-    }
+      baseDir: "./",
+    },
   });
   // each of these watch callbacks will take a location to watch
   // as a first argument and a callback to invoke when a change occurs
