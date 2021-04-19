@@ -15,23 +15,19 @@
 <link rel="manifest" href="site.webmanifest">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- Google Tag Manager -->
-		<script>(function (w, d, s, l, i)
-			{
-				w[l] = w[l] || []; w[l].push({
-					'gtm.start':
-						new Date().getTime(), event: 'gtm.js'
-				}); var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-						'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-			})(window, document, 'script', 'dataLayer', 'GTM-TJM5HWR');</script>
-		<!-- End Google Tag Manager -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-194867168-2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+
+			gtag('config', 'UA-194867168-2');
+		</script>
+		
 	</head>
 	<body class="is-preload">
-		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJM5HWR" height="0" width="0"
-				style="display:none;visibility:hidden"></iframe></noscript>
-		<!-- End Google Tag Manager (noscript) -->
+
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -63,7 +59,8 @@
 										<ul class="actions">
 											<li><a href="images/2018-04-19 Collin_Bradley_Resume.pdf" 
 												target="_blank"
-												class="button big">checkout my resumé</a></li>
+												class="button big js-resume-event"
+												>checkout my resumé</a></li>
 										</ul>
 									</div>
 									<span class="image object">
@@ -148,7 +145,7 @@
 									<div class="posts">
 										<article>
 											<a href="https://forgetmenote.herokuapp.com/" 
-													target="_blank" class="image"><img src="images/forgetmenote_portfolio_image.gif" alt="" /></a>
+													target="_blank" class="image js-project-click"><img src="images/forgetmenote_portfolio_image.gif" alt="" /></a>
 											<h3>ForgetMeNote</h3>
 											<p>A clone of Evernote, a cloud-based note-taking application.</p>
 											<ul>
@@ -169,15 +166,15 @@
 											<ul class="actions">
 												<li><a href="https://forgetmenote.herokuapp.com/" 
 													target="_blank"
-													class="button">Live</a></li>
+													class="button js-project-click">Live</a></li>
 												<li><a href="https://github.com/mrcjbradley/ForgetMeNote" 
 													target="_blank"
-													class="button">Repo</a></li>
+													class="button js-project-click">Repo</a></li>
 											</ul>
 										</article>
 										<article>
 											<a href="https://mrcjbradley.github.io/CSS-Transitions/" 
-													target="_blank" class="image"><img src="images/css_transitions_portfolio_image.gif" alt="" /></a>
+													target="_blank" class="image js-project-click"><img src="images/css_transitions_portfolio_image.gif" alt="" /></a>
 											<h3>CSS Transitions</h3>
 											<p>A playground for tips/tricks to breathe some life into the navigation between content.</p>
 											<ul>
@@ -195,10 +192,10 @@
 											<ul class="actions">
 												<li><a href="https://mrcjbradley.github.io/CSS-Transitions/" 
 													target="_blank"
-													class="button">Live</a></li>
+													class="button js-project-click">Live</a></li>
 												<li><a href="https://github.com/mrcjbradley/CSS-Transitions" 
 													target="_blank"
-													class="button">Repo</a></li>
+													class="button js-project-click">Repo</a></li>
 											</ul>
 										</article>
 										
@@ -308,6 +305,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="./assets/js/ga-events.js"></script>
 	</body>
 </html>
